@@ -23180,7 +23180,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         });
       }).post(route('login'), {
         onFinish: function onFinish() {
-          return form.reset('password');
+          form.reset('password');
+          window.location.href = window.location.href;
         }
       });
     };
