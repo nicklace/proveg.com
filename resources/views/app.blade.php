@@ -29,7 +29,7 @@
         <main class="container">
             <div class="row">
                 <div class="col-lg-4 offset-lg-1 content">
-                    <a href="index.php"><img height="89" src="{{ asset('img/logo.svg') }}" alt="Dietary Guidelines Initiative"></a>
+                    <a href="{{ route('index') }}"><img height="89" src="{{ asset('img/logo.svg') }}" alt="Dietary Guidelines Initiative"></a>
                     @inertia
                 </div>
                 <div class="col-lg-6 offset-lg-1 bag">
