@@ -10,8 +10,10 @@ createInertiaApp({
     title: (title) => `${title} - ${appName}`,
     resolve: (name) => require(`./Pages/${name}.vue`),
     setup({ el, app, props, plugin }) {
+        const captcheKey = props.initialPage.props.recaptcha_site_key;
         return createApp({ render: () => h(app, props) })
             .use(plugin)
+            .use(VueReCaptcha, { siteKey: captcheKey } )
             .mixin({ methods: { route } })
             .mount(el);
     },

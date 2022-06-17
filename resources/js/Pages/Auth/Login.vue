@@ -8,6 +8,8 @@ import JetCheckbox from '@/Jetstream/Checkbox.vue';
 import JetLabel from '@/Jetstream/Label.vue';
 import JetValidationErrors from '@/Jetstream/ValidationErrors.vue';
 
+
+
 defineProps({
     canResetPassword: Boolean,
     status: String,
@@ -54,7 +56,7 @@ const contact = () => {
             <JetAuthenticationCardLogo />
         </template>
 
-        <JetValidationErrors class="mb-4" />
+        <JetValidationErrors class="alert alert-danger" />
 
         <div v-if="status" class="alert alert-success" role="alert">
             {{ status }}
