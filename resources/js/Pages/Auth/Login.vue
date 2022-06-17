@@ -35,11 +35,14 @@ const submit = () => {
     })).post(route('login'), {
         onFinish: () => {
             form.reset('password');
-        },
-        onSuccess: () => {
-            if (this.errors.isEmpty()) {
+            const isEmpty = Object.keys(form.errors).length === 0;
+             if (isEmpty) {
                 window.location.href = window.location.href;
             }
+        },
+        onSuccess: () => {
+
+
         },
     });
 };

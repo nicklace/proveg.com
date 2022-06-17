@@ -23158,8 +23158,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     status: String
   },
   setup: function setup(__props, _ref) {
-    var _this = this;
-
     var expose = _ref.expose;
     expose();
     var form = (0,_inertiajs_inertia_vue3__WEBPACK_IMPORTED_MODULE_0__.useForm)({
@@ -23183,12 +23181,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }).post(route('login'), {
         onFinish: function onFinish() {
           form.reset('password');
-        },
-        onSuccess: function onSuccess() {
-          if (_this.errors.isEmpty()) {
+          var isEmpty = Object.keys(form.errors).length === 0;
+
+          if (isEmpty) {
             window.location.href = window.location.href;
           }
-        }
+        },
+        onSuccess: function onSuccess() {}
       });
     };
 
