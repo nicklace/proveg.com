@@ -1,0 +1,19 @@
+.form-control{
+    line-height: 32px;
+    border-radius: 6px;
+    border: 1px solid rgba(46, 41, 78, 0.2);
+}
+.form-label{
+    span{
+        color: $blue;
+        margin-left: 5px;
+    }
+}
+
+[type='checkbox']:checked:hover, [type='checkbox']:checked:focus, [type='radio']:checked:hover, [type='radio']:checked:focus {
+    border-color: transparent;
+    background-color: $blue;
+}
+textarea{
+    height: 160px;
+}

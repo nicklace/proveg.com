@@ -1,0 +1,82 @@
+html {
+  font-size: $default-font-size;
+  overflow-x: hidden;
+  body {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    &.open,
+    &.modal-open{
+      overflow-y: hidden;
+      position: fixed;
+      width: 100vw;
+    }
+    .container{
+      max-width: 1210px;
+    }
+    @media screen and (min-width: 1400px) {
+      body:not(.login) &{
+        position: relative;
+        &:before{
+          content: 'Dietary Guidelines Initiative';
+          display: block;
+          position: absolute;
+          top: 820px;
+          right: 83px;
+          width: max-content;
+          z-index: 0;
+          font-weight: 700;
+          font-size: 168px;
+          color: #2E294E;
+          opacity: 0.03;
+          transform: rotate(-90deg);
+          transform-origin: 100% 0;
+          
+        }
+      }
+    }
+    &:not(.home){
+      @media screen and (min-width: 1400px) {
+        &:before{
+          top: 320px;
+        }
+      }
+    }
+    @media screen and (max-width: 990px) {
+      .container{
+        max-width: calc(100vw - 30px);
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .container{
+        max-width: calc(100vw - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    font-family: $font-body;
+    font-size: 1rem;
+    color: $black;
+    line-height: 22px;
+    z-index: 0;
+    overflow-x: hidden;
+    max-width: 100vw;
+
+    background:transparent url('../img/background.png') center center repeat;
+
+    *:focus {
+      outline: none;
+    }
+
+
+  }
+}
+
+
+*:focus {
+  box-shadow: none !important;
+}
+
+
