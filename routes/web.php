@@ -18,7 +18,7 @@ use App\Http\Controllers\LeadController;
 |
 */
 
-//Route::redirect('/', '/login');
+Route::redirect('/', '/login');
 
 Route::middleware([
     'auth:sanctum',
