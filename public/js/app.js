@@ -28813,14 +28813,11 @@ var appName = ((_window$document$getE = window.document.getElementsByTagName('ti
         app = _ref.app,
         props = _ref.props,
         plugin = _ref.plugin;
-    var captcheKey = props.initialPage.props.recaptcha_site_key;
     return (0,vue__WEBPACK_IMPORTED_MODULE_1__.createApp)({
       render: function render() {
         return (0,vue__WEBPACK_IMPORTED_MODULE_1__.h)(app, props);
       }
-    }).use(plugin).use(VueReCaptcha, {
-      siteKey: captcheKey
-    }).mixin({
+    }).use(plugin).mixin({
       methods: {
         route: route
       }

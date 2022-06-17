@@ -57,5 +57,8 @@ const submit = () => {
                 </JetButton>
             </div>
         </form>
+
+
+
     </JetAuthenticationCard>
 </template>
