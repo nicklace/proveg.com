@@ -524,6 +524,7 @@ footer {
 }
 
 footer .container {
+  position: relative;
   padding-top: 160px;
   padding-bottom: 70px;
 }
@@ -544,7 +545,7 @@ footer .container:before {
   position: absolute;
   width: 460px;
   height: 969px;
-  left: -60px;
+  left: -210px;
   top: 40px;
   z-index: 0;
   background: #FFBB00;

@@ -1,10 +1,11 @@
 footer{
-   
+
     position: relative;
     overflow: hidden;
-    
+
     .container{
         //margin-top: 40px;
+        position: relative;
         padding-top: 160px;
         padding-bottom: 70px;
         @media screen and (min-width: 991px) {
@@ -21,7 +22,7 @@ footer{
             position: absolute;
             width: 460px;
             height: 969px;
-            left: -60px;
+            left: -210px;
             top: 40px;
             z-index: 0;
             background: $orange;
@@ -79,10 +80,10 @@ footer{
                     }
                     font-size: 13px;
                     line-height: 16px;
-                    
+
                 }
             }
         }
     }
-    
+
 }
